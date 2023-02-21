@@ -39,7 +39,7 @@
     <div class="jumbotron-fluid custom-jumbotron text-center p-1 pt-2">
       <h1 class="display-5">Weather Dashboard</h1>
     </div>
-<div class="container-fluid">
+    <div class="container-fluid">
       <div class="row">
         <!-- Search for a city container  -->
         <div class="col-3 mt-3">
@@ -69,10 +69,51 @@
                     class="text-danger font-weight-bold"
                   ></small>
                 </p>
-
-
-
-
+              </form>
+              <hr class="card-title border w-100" />
+              <!-- container for saved cities items, to be generated in javascript -->
+              <ul class="list-group list-group-flush" id="cityHistory">
+                <!-- <li class="list-group-item p-0 pt-2"><button class="btn btn-block custom-btn">Atlanta</button></li>-->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- container for current and 5 day forecast sections   -->
+        <div class="col-9">
+          <div
+            class="row d-flex flex-column border border-dark mr-1 mt-3 p-0"
+            id="currentWeatherContainer"
+          >
+            <!--container for current forecast API fields, to be generated in javascript -->
+            <div class="col d-flex flex-column" id="currentForecast">
+              <!-- <h3>Atlanta <span>(9/13/2022) ☀️</span></h3>
+                        <p class="mt-3">Temp: <span>76.62°F</span></p>
+                        <p>Wind: <span>8.43 MPH</span></p>
+                        <p>Humidity: <span>44%</span></p> -->
+            </div>
+          </div>
+          <div class="row mt-3" id="fiveDayWeatherContainer">
+            <div class="col p-0 mt-2">
+              <h5>5-Day Forecast:</h5>
+            </div>
+          </div>
+          <!--container for 5 day forecast API fields, to be generated in javascript -->
+          <div class="row d-flex" id="fiveDayForecast">
+            <!-- <div class="col pl-0">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column custom-card-body p-1">
+                                <h5>9/14/2022</h5>
+                                <h5>☀️</h5>
+                                <p>Temp: <span>76.62°F</span></p>
+                                <p>Wind: <span>8.43 MPH</span></p>
+                                <p>Humidity: <span>44%</span></p>
+                            </div>  
+                        </div>
+                    </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
